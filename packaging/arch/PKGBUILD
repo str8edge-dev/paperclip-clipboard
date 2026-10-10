@@ -1,0 +1,39 @@
+pkgname=paperclip-clipboard
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="A simple, theme-friendly GTK4 clipboard manager built with gtk4-rs"
+arch=('x86_64' 'aarch64')
+url="https://github.com/str8edge-dev/paperclip-clipboard"
+license=('GPL-3.0-or-later')
+
+depends=(
+    gtk4
+    hicolor-icon-theme
+)
+
+makedepends=(
+    cargo
+    rust
+    git
+    meson
+    ninja
+    pkgconf
+)
+
+source=(
+  "$pkgname::git+$url.git"
+)
+sha256sums=('SKIP')
+
+prepare() {
+  cd "$srcdir/$pkgname"
+}
+
+build() {
+  arch-meson "$srcdir/$pkgname" "$srcdir/build"
+  meson compile -C "$srcdir/build"
+}
+
+package() {
+  meson install -C "$srcdir/build" --destdir "$pkgdir"
+}

@@ -1,0 +1,23 @@
+[package]
+name = "paperclip-clipboard"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+wayland-clipboard-listener = "0.6.1"
+gtk = { version = "0.11.4", package = "gtk4", features = ["v4_22"] }
+async-channel = "2.5.0"
+url = "2.5.8"
+chrono = "0.4.45"
+mimetype-detector = "0.3.6"
+secret-service = { version = "5.1.0", features = ["rt-async-io-crypto-rust"] }
+rand = "0.10.0"
+sha2 = "0.11.0"
+ksni = { version = "0.3.4", default-features = false, features = ["async-io"] }
+anyhow = "1.0.102"
+redb = "4.1.0"
+serde = { version = "1.0.229", features = ["derive"] }
+postcard = { version = "1.1.3", features = ["alloc"] }
+chacha20poly1305 = "0.11.0"
+dirs = "6.0.0"
+image = "0.25.10"

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="@GRESOURCE_PATH@/">
+    <file compressed="true">style.css</file>
+    <file alias="app-icon.svg">../icons/@APP_ID@.svg</file>
+  </gresource>
+</gresources>

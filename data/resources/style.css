@@ -1,0 +1,129 @@
+window {
+    border-radius: 10px;
+}
+
+.main-box {
+    padding: 5px;
+}
+
+/* Header */
+.header-box {
+    border-radius: 10px;
+    padding: 12px 11px 8px;
+}
+
+.header-label {
+    padding: 5px 15px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.count-label {
+    background-color: @theme_bg_color;
+    opacity: 0.55;
+    border-radius: 14px;
+}
+
+.header-button {
+    transition: background-color 0.2s ease-out;
+}
+
+.header-button:hover {
+    background: none;
+}
+
+.header-button > image {
+    transition: opacity 0.2s ease-out;
+}
+
+.header-button:hover > image {
+    opacity: 0.8;
+}
+
+/* Main content */
+.main-box {
+    border-radius: 10px;
+}
+
+.main-listview {
+    border-radius: 10px;
+    background: none;
+}
+
+.main-listview > row {
+    border-radius: 10px;
+    padding: 6px 15px;
+    transition: background-color 0.2s ease-out;
+}
+
+.remove-button {
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+/* Show remove-button when the row is hovered */
+.main-listview > row:hover > overlay > button {
+    opacity: 1;
+}
+
+.row-image {
+    border-radius: 10px;
+}
+
+.remove-button {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Search and footer */
+.search-entry {
+    border-radius: 10px;
+}
+
+.main-box > separator {
+    margin: 5px;
+}
+
+.footer-button {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.footer-button:hover {
+    background-color: alpha(currentColor, 0.05);
+}
+
+/* Preferences */
+.preferences-box {
+    padding: 15px;
+}
+
+.preferences-list {
+    background-color: @theme_bg_color;
+    border-radius: 8px;
+}
+
+.preferences-row {
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.preferences-list > row:last-child {
+    border-bottom: none;
+}
+
+/* About */
+.about-button {
+    background-color: @theme_bg_color;
+    border: 1px solid alpha(black, 1);
+    border-radius: 8px;
+    padding: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.about-button:hover {
+    background-color: alpha(currentColor, 0.05);
+}
+
+.about-box {
+    padding: 15px;
+}
