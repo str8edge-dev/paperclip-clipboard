@@ -21,19 +21,19 @@ makedepends=(
 )
 
 source=(
-  "$pkgname::git+$url.git"
+    "$pkgname::git+$url.git#tag=v$pkgver"
 )
 sha256sums=('SKIP')
 
 prepare() {
-  cd "$srcdir/$pkgname"
+    cd "$srcdir/$pkgname"
 }
 
 build() {
-  arch-meson "$srcdir/$pkgname" "$srcdir/build"
-  meson compile -C "$srcdir/build"
+    arch-meson "$srcdir/$pkgname" "$srcdir/build"
+    meson compile -C "$srcdir/build"
 }
 
 package() {
-  meson install -C "$srcdir/build" --destdir "$pkgdir"
+    meson install -C "$srcdir/build" --destdir "$pkgdir"
 }

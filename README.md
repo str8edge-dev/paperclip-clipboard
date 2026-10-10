@@ -79,6 +79,7 @@ The easiest way to get this app is to download a prebuilt binary from the <a hre
    git clone https://github.com/str8edge-dev/paperclip-clipboard.git
    cd paperclip-clipboard
    ```
+
 2. Create a Meson build directory:
    ```shell
    meson setup build
@@ -97,6 +98,31 @@ The easiest way to get this app is to download a prebuilt binary from the <a hre
    To install the application system-wide:
    ```shell
    sudo meson install -C build
+   ```
+
+### Building an Arch Linux Package (or Arch-based distributions)
+
+**Prerequisites**: base-devel, git.
+
+1. Clone the repository
+   ```shell
+   git clone https://github.com/str8edge-dev/paperclip-clipboard.git
+   cd paperclip-clipboard
+   ```
+
+2. Build and install
+   ```shell
+   cd packaging/arch
+   makepkg -si
+   ```
+
+   To build the package without installing:
+   ```shell
+   makepkg
+   ```
+   The package produced can be installed with:
+   ```shell
+   sudo pacman -U <package-name>
    ```
 <hr />
 
