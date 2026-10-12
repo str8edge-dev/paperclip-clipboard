@@ -17,6 +17,13 @@ A simple, theme-friendly GTK4 clipboard manager built with gtk4-rs. Customize th
 Uses <a href="https://github.com/Decodetalkers/wayland-clipboard-listener">wayland-clipboard-listener</a> to listen to the clipboard in Wayland.<br>
 
 **Compatibility**: Currently supports only Wayland compositors that support the ext-data-control-v1 protocol. Gnome is not yet supported, but support is planned.
+
+Press `Esc` to hide the app to the system tray. A system tray is required to display the app's tray icon.
+
+To show the app window again after hiding it, click on the Show Clipboard option from the tray or run the following command in the terminal:
+```shell
+paperclip-clipboard --show
+```
 <hr />
 
 ## Preview
@@ -30,7 +37,7 @@ Uses <a href="https://github.com/Decodetalkers/wayland-clipboard-listener">wayla
 </div>
 
 ## Theming
-Paperclip Clipboard supports custom CSS for theming the app. Create a style.css file in the app's configuration directory at ```~/.config/paperclip-clipboard/style.css```.
+Paperclip Clipboard supports custom CSS for theming the app. Create a style.css file in the app's configuration directory at `~/.config/paperclip-clipboard/style.css`.
 
 You can target the following CSS classes in your stylesheet:
 
