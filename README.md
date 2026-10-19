@@ -79,7 +79,7 @@ The easiest way to get this app is to download a prebuilt binary from the <a hre
 
 ## Building
 
-**Prerequisites**: Make sure git, rust, cargo, meson (1.4 or newer), ninja and gtk4 are installed.
+**Prerequisites**: Make sure git, rust, cargo, meson (1.4 or newer), ninja, cmake and GTK4 Development Libraries (eg., `gtk4-devel` on fedora-based distros, `libgtk-4-dev` on debian-based distros) are installed.
 
 1. Clone the repository
    ```shell
