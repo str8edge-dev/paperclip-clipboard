@@ -33,7 +33,7 @@ Items marked with `x-kde-passwordManagerHint` MIME type are discarded and never 
 
 ### Example CSS Configs
 
-Choose a CSS example from the [examples](#docs/css-examples) and copy its contents into `~/.config/paperclip-clipboard/style.css`.
+Choose a CSS example from the [examples](docs/css-examples) and copy its contents into `~/.config/paperclip-clipboard/style.css`.
 
 <div align="center">
     <img src="./docs/images/monochrome-css.gif" alt="Paperclip Clipboard preferences window" width="360">
