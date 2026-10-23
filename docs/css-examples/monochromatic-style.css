@@ -1,0 +1,115 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 17px;
+  outline-color: white;
+}
+
+window {
+  background-color: black;
+}
+
+.main-box {
+  padding: 12px;
+}
+
+.search-entry {
+  opacity: 0.8;
+  transform: scale(1);
+  transition:
+    transform 100ms ease,
+    background-color 200ms ease,
+    color 200ms ease;
+}
+
+.search-entry:hover,
+.search-entry:focus {
+  transform: scale(1.02);
+}
+
+.main-listview > row {
+  background-color: transparent;
+  border: none;
+  margin: 5px 0;
+  transform: scale(0.99);
+  transition:
+    transform 150ms ease,
+    background-color 200ms ease,
+    color 200ms ease;
+}
+
+.main-listview > row:hover {
+  transform: scale(1);
+}
+
+.main-listview > row:hover,
+.main-listview > row:focus {
+  background-color: white;
+  color: black;
+}
+
+.main-listview > row:focus {
+  outline: 1px solid black;
+}
+
+.main-listview > row:active {
+  transform: scale(0.97);
+}
+
+.main-listview row:selected:backdrop {
+  background-color: #0D0D0D;
+}
+
+.row-label,
+.row-image {
+  padding: 0.8px 0;
+}
+
+.row-image {
+  outline: 2px solid white;
+}
+
+.remove-button {
+  background-image: none;
+  background-color: black;
+  border-color: transparent;
+  box-shadow: none;
+  transform: scale(0.8);
+  transition:
+    transform 150ms ease,
+    opacity 250ms ease;
+}
+
+.remove-button:hover {
+  transform: scale(0.9);
+}
+
+.preferences-list,
+.count-label {
+  background-color: transparent;
+}
+
+.preferences-row {
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.footer-box {
+  padding: 5px 0 5px 6px;
+}
+
+.footer-button {
+  color: rgba(200, 200, 200, 0.7);
+  transition: background-color 200ms ease;
+}
+
+.footer-button:hover {
+  background-color: #0D0D0D;
+}
+
+switch {
+  transition: background-color 100ms ease;
+}
+
+switch:checked {
+  background-color: white;
+}
